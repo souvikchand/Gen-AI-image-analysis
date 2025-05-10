@@ -1,0 +1,9 @@
+[server]
+headless = true
+port = 8888
+enableCORS = false
+enableXsrfProtection = false
+maxUploadSize = 100
+
+[browser]
+serverAddress = "localhost"  # or "localhost"

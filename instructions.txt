@@ -1,0 +1,22 @@
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\venv\Scripts\Activate.ps1  #powershell
+venv\Scripts\activate.bat    #cmd
+
+streamlit run app.py --server.enableXsrfProtection false
+
+
+your_project/
+├── venv/                   # Virtual environment (already created)
+├── app.py                  # Main application file
+├── requirements.txt         # Dependencies file
+├── static/
+│   └── uploads/            # For storing uploaded images
+└── templates/              # For HTML templates (if using web interface)
+
+
+chat/
+│
+├── app.py
+├── venv/ (optional, ignored in cloud)
+└── .streamlit/
+    └── config.toml
