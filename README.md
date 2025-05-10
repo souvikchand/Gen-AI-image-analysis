@@ -4,15 +4,16 @@ this is a Gen-AI project. that utilizes various AI models to analyze a picture.
 
 ### steps
 1. create your virtual environment (venv) [optional]
-    > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-    > .\venv\Scripts\Activate.ps1  #powershell
-    > venv\Scripts\activate.bat    #cmd
+    > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser <br/>
+    > .\venv\Scripts\Activate.ps1  #powershell <br/>
+    > venv\Scripts\activate.bat    #cmd <br/>
 
 1. install all modules under `requirements.txt` using -->
     > pip install -r requirements.txt
 
 2. run the app using
-    > streamlit run app.py
+    > streamlit run app.py <br/>
+    
     make sure to check `.streamlit/config.toml` for your streamlit settings
 
 
