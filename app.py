@@ -56,7 +56,7 @@ def main():
         image_bytes = uploaded_file.getvalue()
         st.write("Filename:", uploaded_file.name)
         image = Image.open(uploaded_file).convert('RGB')
-        st.image(image, caption="Uploaded Image", use_container_width= False, width=200) 
+        st.image(image, caption="Uploaded Image", width=200)  #use_container_width= False,
         
         col1, col2, col3 = st.columns([0.33,0.33,0.33])
 

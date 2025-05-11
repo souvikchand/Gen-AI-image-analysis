@@ -4,6 +4,17 @@ import numpy as np
 import torch
 import pandas as pd
 import streamlit as st
+from pathlib import Path
+
+def safe_image_open(uploaded_file):
+    try:
+        # Convert to lowercase and remove spaces
+        filename = Path(uploaded_file.name).stem.lower().replace(" ", "_") + ".png"
+        image = Image.open(uploaded_file).convert("RGB")
+        return image
+    except Exception as e:
+        st.error(f"Error loading image: {str(e)}")
+        return None
 
 def QA(image, question, models):
     inputs= models['sales process'](image, question, return_tensors= 'pt')
