@@ -74,7 +74,7 @@ def main():
                 try:
                     detections = detect_objects(image.copy(), models)
                     annotated_image= draw_bounding_boxes(image, detections)
-                    st.image(annotated_image, caption="Detected Objects", use_container_width=True)
+                    st.image(annotated_image, caption="Detected Objects", use_column_width=True)
                     show_detection_table(detections)
                 except:
                     st.write("some error!! try another image")
